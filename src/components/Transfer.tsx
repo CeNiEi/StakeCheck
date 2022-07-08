@@ -72,7 +72,7 @@ const Transfer: FC<{callback: () => void}> = ({callback}) => {
       setErrorAlert(true);
       setBackdrop(false);
     }
-  }, [publicKey, sendTransaction, connection]);
+  }, [publicKey, sendTransaction, connection, callback]);
 
   return (
     <div>
